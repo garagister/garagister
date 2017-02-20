@@ -1,0 +1,2 @@
+class Garagiste < ApplicationRecord
+end

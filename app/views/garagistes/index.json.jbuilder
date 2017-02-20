@@ -1,0 +1,1 @@
+json.array! @garagistes, partial: 'garagistes/garagiste', as: :garagiste
