@@ -13,7 +13,7 @@ garagistes = Garagiste.create( [ {name: 'Garlaban Automobile', ville: 'Aubagne',
               {name: 'DPS Auto', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', taux_mo: 60, taux_piece: 1}
               ])
 
-searchs = Search.create( [ {name: 'Garlaban Automobile', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement'},
+searches = Search.create( [ {name: 'Garlaban Automobile', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement'},
               {name: 'Chivallier', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement'},
               {name: 'BR Auto', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement'},
               {name: 'MD Muscatelle', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement'},
