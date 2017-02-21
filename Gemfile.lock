@@ -54,7 +54,11 @@ GEM
     byebug (9.0.6)
     coderay (1.1.1)
     concurrent-ruby (1.0.4)
+    config (1.4.0)
+      activesupport (>= 3.0)
+      deep_merge (~> 1.1.1)
     debug_inspector (0.0.2)
+    deep_merge (1.1.1)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.17)
@@ -173,6 +177,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap-sass
+  config
   figaro
   font-awesome-sass
   jbuilder (~> 2.0)
@@ -189,6 +194,9 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   uglifier
+
+RUBY VERSION
+   ruby 2.3.3p222
 
 BUNDLED WITH
    1.14.4
