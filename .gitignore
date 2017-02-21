@@ -8,9 +8,11 @@ public/assets
 .idea
 .idea/workspace.xml
 .idea/*
-.idea/workspace.xml
-
 # Ignore application configuration
 /config/application.yml
 Supprimerait .idea/runConfigurations/
+
+
+# Ignore application configuration
+/config/application.yml
 Supprimerait tmp/

@@ -3,6 +3,7 @@ class CreateGaragistes < ActiveRecord::Migration[5.0]
     create_table :garagistes do |t|
       t.string :name
       t.string :ville
+      t.string :adresse
       t.integer :code_postal
       t.string :categorie
       t.decimal :taux_mo
