@@ -1,11 +1,4 @@
 Rails.application.routes.draw do
-  get 'search/show'
-
-  get 'search/create'
-
-  get 'search/edit'
-
-  get 'search/update'
 
   resources :garagistes
   root to: 'pages#home'
