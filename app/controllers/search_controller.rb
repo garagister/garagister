@@ -1,5 +1,5 @@
 class SearchController < ApplicationController
-  before_action :set_search, only: [:show, :edit, :update]
+  before_action :set_search, only: [:create, :show, :edit, :update]
 
   def show
 
@@ -38,7 +38,7 @@ class SearchController < ApplicationController
     end
 
   def search_params
-      params.require(:search).permit(:name)
+      params.require(:search).permit(:name, :ville, :code_postal, :categorie, :description, :price)
     end
 
 end

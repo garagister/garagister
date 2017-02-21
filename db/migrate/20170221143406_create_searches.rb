@@ -6,6 +6,7 @@ class CreateSearches < ActiveRecord::Migration[5.0]
       t.integer :code_postal
       t.string :categorie
       t.string :description
+      t.integer :price
 
       t.timestamps
     end
