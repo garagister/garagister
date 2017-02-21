@@ -10,9 +10,8 @@ public/assets
 
 # Ignore application configuration
 /config/application.yml
+
 Supprimerait .idea/runConfigurations/
 
-
-# Ignore application configuration
-/config/application.yml
+Supprimerait .idea/
 Supprimerait tmp/
