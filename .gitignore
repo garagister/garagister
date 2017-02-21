@@ -5,6 +5,9 @@ tmp/*
 *.swp
 .DS_Store
 public/assets
+.idea
+
 
 # Ignore application configuration
 /config/application.yml
+Supprimerait tmp/
