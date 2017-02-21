@@ -1,8 +1,5 @@
 source 'https://rubygems.org'
-<<<<<<< HEAD
-=======
 
->>>>>>> search
 ruby '2.3.3'
 
 gem 'rails', '5.0.1'
