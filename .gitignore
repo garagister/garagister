@@ -5,6 +5,12 @@ tmp/*
 *.swp
 .DS_Store
 public/assets
+.idea
+.idea/workspace.xml
+.idea/*
+.idea/workspace.xml
 
 # Ignore application configuration
 /config/application.yml
+Supprimerait .idea/runConfigurations/
+Supprimerait tmp/
