@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 20170222162554) do
   create_table "garagistes", force: :cascade do |t|
     t.string   "name"
     t.string   "ville"
-    t.string   "adresse"
     t.integer  "code_postal"
     t.string   "categorie"
     t.decimal  "taux_mo"
