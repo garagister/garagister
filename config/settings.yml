@@ -1,19 +1,16 @@
 interventions:
-  -
+  vidange:
     name: "Vidange"
     price: 150.00
-  -
+  revision:
     name: "Révision simple"
     price: 200.00
-  -
+  vidange_commplete:
    name: "Vidange + filtre"
    price: 180.00
-  -
+  revision_generale:
    name: "Révision générale"
    price: 220.00
-
-
-
 
 vehicles:
   renault:
