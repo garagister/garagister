@@ -4,6 +4,7 @@ class SearchController < ApplicationController
   def show
 
 
+
   end
 
   def create
@@ -15,13 +16,12 @@ class SearchController < ApplicationController
 
     # redirect search#show pour @search
 
-    # if valid?
-      @search.save
-
-      redirect_to search_show_path(search_params)
-    #else
-    #  render pages#home
-    #end
+    if @search.valid?
+        @search.save
+        redirect_to search_show_path(@search)
+    else
+        render garagistes_path
+    end
   end
 
   def edit
@@ -38,7 +38,7 @@ class SearchController < ApplicationController
     end
 
   def search_params
-      params.require(:search).permit(:name)
+      params.require(:search).permit(:intervention, :ville)
     end
 
 end

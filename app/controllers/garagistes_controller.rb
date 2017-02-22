@@ -4,17 +4,23 @@ class GaragistesController < ApplicationController
   # GET /garagistes
   # GET /garagistes.json
   def index
-    @garagistes = Garagiste.all
+
+
+  end
+
+   def new
+
   end
 
   # GET /garagistes/1
   # GET /garagistes/1.json
   def show
+
   end
 
   # GET /garagistes/new
   def new
-    @garagiste = Garagiste.new
+
   end
 
   # GET /garagistes/1/edit

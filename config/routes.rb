@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
 
   resources :garagistes
-  root to: 'pages#home'
+  root to: 'page#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  # rdv
-  post "search", to: "search#create"
-  get "search/:id", to: "search#show"
+  resources :searches, only:[:create, :show]
 
   # rdv appointment
   get "search/:id/appointment", to: "search#edit"
