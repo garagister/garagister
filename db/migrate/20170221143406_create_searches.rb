@@ -7,6 +7,7 @@ class CreateSearches < ActiveRecord::Migration[5.0]
       t.string :categorie
       t.string :description
       t.integer :price
+      t.references :garagiste, foreign_key: true
 
       t.timestamps
     end
