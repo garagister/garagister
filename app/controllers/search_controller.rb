@@ -1,5 +1,5 @@
 class SearchController < ApplicationController
-  before_action :set_search, only: [:create, :show, :edit, :update]
+  before_action :set_search, only: [:show, :edit, :update]
 
   def show
 
@@ -12,13 +12,14 @@ class SearchController < ApplicationController
 
     # ICI: elire les garagistes et les sauver en base
 
+
     # redirect search#show pour @search
 
-     if @search.valid?
-      @search.save
-      redirect_to search_show_path(@search)
+    if @search.valid?
+        @search.save
+        redirect_to search_show_path(@search)
     else
-      render garagistes_path
+        render garagistes_path
     end
   end
 
@@ -36,7 +37,7 @@ class SearchController < ApplicationController
     end
 
   def search_params
-      params.require(:search).permit(:name, :ville, :code_postal, :categorie, :description, :price)
+      params.require(:search).permit(:intervention, :ville)
     end
 
 end
