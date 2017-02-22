@@ -1,2 +1,3 @@
 class Search < ApplicationRecord
+
 end
