@@ -12,16 +12,14 @@ class SearchController < ApplicationController
 
     # ICI: elire les garagistes et les sauver en base
 
-
     # redirect search#show pour @search
 
-    # if valid?
+     if @search.valid?
       @search.save
-
-      redirect_to search_show_path(search_params)
-    #else
-    #  render pages#home
-    #end
+      redirect_to search_show_path(@search)
+    else
+      render garagistes_path
+    end
   end
 
   def edit
