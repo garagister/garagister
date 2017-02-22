@@ -1,0 +1,2 @@
+class Ville < ApplicationRecord
+end
