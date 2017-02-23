@@ -1,5 +1,16 @@
-<%= simple_form_for(@search) do |f| %>
-  <%= f.select :intervention, collection: interventions_collection %>
-  <%= f.input :ville, collection: ["Marseille", "Aubagne"] %>
-  <%= f.submit "Obtenir trois devis", class: "btn btn-yellow"  %>
-<% end %>
+
+<div class="row">
+  <%= simple_form_for @search do |f| %>
+    <div class="col-sm-12 col-md-4 col-md-offset-1">
+      <%= f.input :intervention, collection: interventions_collection, input_html: {class: "select2"} %>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <%= f.input :ville, collection: ["Marseille", "Aubagne"] %>
+    </div>
+
+    <div class="col-md-2">
+      <%= f.submit "Obtenir trois devis", class: "btn btn-yellow" %>
+    </div>
+  <% end %>
+</div>
