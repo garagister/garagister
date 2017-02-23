@@ -1,13 +1,108 @@
-<h1>Mes devis</h1>
-
+<h1>Devis</h1>
+<h3 class="text-center">Faites votre DEVIS révision - <%= @search.intervention %> au meilleur prix !</h3>
 <%= simple_form_for(@search) do |f| %>
-  <%= f.error_notification %>
+    <section class="devis">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="thumbnail thumbnail-perso">
+              <img src="http://www.garagister.com/medias/images/chivalier-pneus-banniere-1.jpg?fx=r_1200_800" alt="img-chivalier">
+                <div class="caption">
+                  <h3 class="text-center"><strong>Chivallier</strong></h3>
+                  <p> Ville : <%= @search.ville %></p>
+                  <p> Type d'intervention : <%= @search.intervention %></p>
+                  <h4>Service + : </h4>
+                  <ul>
+                    <li>Véhicule de courtoisie</li>
+                    <li>Facilités de paiement</li>
+                    <li>Dépannage</li>
+                  </ul>
+                  <h4>Autres services : </h4>
+                  <ul>
+                    <li>Forfait de 71€ TTC pour les Révisions Intermédiaires -25% sur les...</li>
+                  </ul>
+                  <p class="text-center"><a href="#" class="btn-perso btn btn-primary btn-lg" role="button">Prendre rdv</a></p>
+                </div>
+            </div>
+          </div>
 
-  <%= f.input :ville %>
-  <%= f.input :intervention %>
-  <%= f.input :code_postal %>
+          <div class="col-xs-12 col-sm-4">
+            <div class="thumbnail thumbnail-perso">
+              <img src="http://www.garagister.com/medias/images/banniere-garage-garlaban.jpg?fx=r_1200_800" alt="img-garlaban">
+              <div class="caption">
+                <h3 class="text-center"><strong>Garlaban</strong></h3>
+                <p> Ville : <%= @search.ville %></p>
+                <p> Type d'intervention : <%= @search.intervention %></p>
+                <h4>service + :</h4>
+                <ul>
+                  <li>Diagnostic électronique</li>
+                  <li>Spécialiste climatisation</li>
+                </ul>
+                <h4>Autres services : </h4>
+                <ul>
+                  <li>Pour 3 amortisseurs achetés, le 4ème est offert Réduction sur le... </li>
+                </ul>
+                <p class="text-center"><a href="#" class="btn-perso btn btn-primary btn-lg" role="button">Prendre rdv</a></p>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-xs-12 col-sm-4">
+            <div class="thumbnail thumbnail-perso">
+            <img src="http://www.garagister.com/medias/images/br-auto-banniere-2.jpg?fx=r_1200_800" alt="img-br-auto">
+              <div class="caption">
+              <h3 class="text-center"><strong>BR Auto</strong></h3>
+              <p> Ville : <%= @search.ville %></p>
+              <p> Type d'intervention :<%= @search.intervention %></p> <br/>
+                <ul>
+                  <li>service + :
+                    Véhicule de courtoisie</li>
+                  <li>Facilités de paiement</li>
+                  <li>Dépannage</li>
+                </ul>
+                <h4>Autres services :</h4>
+                <ul>
+                  <li>Remise de 15% pneumatique été et hiver</li>
+                </ul>
+                <p class="text-center"><a href="#" class="btn-perso btn btn-primary btn-lg" role="button" role="button" data-toggle="modal" data-target="#myModal">Prendre rdv</a></p>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Rendez-vous</h4>
+                      </div>
+                      <div class="modal-body">
+                        <h4>Paiement :</h4>
+                         <div class="container">
+                          <div class="row">
+                            <div class="col-xs-3 xs-perso text-center">
+                              <button type="button" class="btn-perso btn-primary btn">En ligne</button>
+                            </div>
 
-  <%= f.button :submit %>
+                            <div class="col-xs-3 xs-perso text-center">
+                              <button type="button" class="btn btn-default btn" disabled="disabled">Au garage</button>
+                              <br><br>
+                              <p>Choix du rendez-vous :</p>
+                              <button type="button" class="btn btn-info">Lundi</button>
+
+                              <button type="button" class="btn btn-info">Mardi</button>
+
+                              <button type="button" class="btn btn-info">Mercredi</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 <% end %>
-

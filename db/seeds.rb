@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Garagiste.destroy_all
+Search.destroy_all
 
 garagistes = Garagiste.create( [ {name: 'Garlaban Automobile', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', taux_mo: 60, taux_piece: 1},
               {name: 'Chivallier', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', taux_mo: 70, taux_piece: 1},
@@ -20,4 +22,5 @@ searches = Search.create( [ {name: 'Garlaban Automobile', ville: 'Aubagne', code
               {name: 'DPS Auto', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement'}
               ])
 
-villes = ["Marseille", "Aubagne", "La Ciotat"]
+#garagistes.each { |params| Garagiste.create!(params) }
+#searches.each { |params| Search.create!(params) }

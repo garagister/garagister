@@ -1,11 +1,12 @@
 <h1>Avec<strong> Garagister</strong> vous allez changer d'avis sur les garages</h1>
-  <h2>Comparateur de garages équitable</h2>
+
+  <h2>Obtenez 3 devis de garages à proximité</h2>
+  <div>
+  <%= render 'form_search_home' %>
+  </div>
 
 
-  <div class="container text-center padded">
-   <%= render 'form_search_home'%>
-
-    <h2>Pourquoi nous faire confiance ?</h2>
+  <div class="container text-center padded"> <a href="http://fr.web.img6.acsta.net/r_1280_720/medias/04/21/07/042107_ph4.jpgrails"><h2>Pourquoi nous faire confiance ?</h2></a>
 
     <div class="row">
 
@@ -33,36 +34,43 @@
     </div>
   </div>
  <hr>
+<div class="container padded text-center"> <h2>Découvrez notre selection de bons garages triés par spécialité</h2>
+</div>
   <div class="container text-center">
     <div class="row">
-
       <div class="col-xs-12 col-sm-4">
-        <div class="card-category"><h3>Révision</h3></div>
+
         <%= image_tag "revision-auto-garagister.jpg", class:"img-card" %>
+        <div class="card-category"><h3>Révision</h3></div>
       </div>
 
       <div class="col-xs-12 col-sm-4">
-        <div class="card-category"><h3>Electronique</h3></div>
+
         <%= image_tag "diagnostic-auto-garagister.jpg", class:"img-card"%>
+        <div class="card-category"><h3>Electronique</h3></div>
       </div>
 
       <div class="col-xs-12 col-sm-4">
-        <div class="card-category"><h3>Carrosserie</h3></div>
+
         <%= image_tag "carrosserie-auto-aubagne.jpg", class:"img-card" %>
+        <div class="card-category"><h3>Carrosserie</h3></div>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-4">
-        <div class="card-category"><h3>4X4</h3></div>
+
         <%= image_tag "garage-4x4-aubagne.jpg", class:"img-card" %>
+        <div class="card-category"><h3>4X4</h3></div>
       </div>
       <div class="col-xs-12 col-sm-4">
-        <div class="card-category"><h3>Dépannage</h3></div>
+
         <%= image_tag "depannage-auto-aubagne.jpg", class:"img-card" %>
+        <div class="card-category"><h3>Dépannage</h3></div>
       </div>
       <div class="col-xs-12 col-sm-4">
-        <div class="card-category"><h3>Mécanique</h3></div>
+
         <%= image_tag "garage-mecanique-auto-aubagne.jpg", class:"img-card" %>
+        <div class="card-category"><h3>Mécanique</h3></div>
       </div>
     </div>
   </div>

@@ -1,20 +1,18 @@
 class SearchesController < ApplicationController
   before_action :set_search, only: [:show, :edit, :update]
 
+  def index
+    @searches = Search.all
+  end
+
   def show
-    if params[:id].to_s == [:ville].to_s
-      @search = Search.find(params[:id])
-    else
-      puts "error"
-     end
+    @search = Search.find(params[:id])
   end
 
   def create
     @search = Search.new(search_params)
 
-
     # ICI: elire les garagistes et les sauver en base
-
 
     # redirect search#show pour @search
 
@@ -22,7 +20,7 @@ class SearchesController < ApplicationController
         @search.save
         redirect_to search_path(@search)
     else
-        render garagistes_path
+        render home_path
     end
   end
 
@@ -40,7 +38,7 @@ class SearchesController < ApplicationController
     end
 
   def search_params
-      params.require(:search).permit(:intervention, :ville, :code_postal)
+      params.require(:search).permit(:name, :intervention, :ville, :code_postal)
     end
 
 end
