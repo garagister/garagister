@@ -5,7 +5,7 @@ interventions:
   revision:
     name: "Révision simple"
     price: 200.00
-  vidange_commplete:
+  vidange_complete:
    name: "Vidange + filtre"
    price: 180.00
   revision_generale:
