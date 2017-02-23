@@ -22,4 +22,24 @@ vehicles:
 
 
 
+# @search = Search.new(intervention: "revision")
+
+# @search.intervention # => "revision"
+
+# Settings.interventions.public_send(@search.intervention).price
+
+
+# class Toto
+#    def call(arg1)
+#       3  + arg1
+#    end
+# end
+
+
+# myarg = 4
+# instance = Toto.new
+# instance.call(myarg)
+
+# instance.public_send(:call, myarg)
+
 

@@ -22,5 +22,7 @@ searches = Search.create( [ {name: 'Garlaban Automobile', ville: 'Aubagne', code
               {name: 'DPS Auto', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement'}
               ])
 
+
 #garagistes.each { |params| Garagiste.create!(params) }
 #searches.each { |params| Search.create!(params) }
+

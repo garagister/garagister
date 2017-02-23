@@ -1,6 +1,4 @@
 class Search < ApplicationRecord
  validates :intervention, presence: true
- validates :ville, presence: true
- has_many :quotations, dependent: :destroy
-
+ validates :code_postal, presence: true
 end
