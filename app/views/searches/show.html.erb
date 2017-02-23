@@ -38,7 +38,42 @@
         <h2><%= @search.ville %></h2>
         <h2><%= @search.intervention %></h2>
         <h2><%= @search.code_postal %></h2>
-        <p class="text-center"><a href="#" class="btn-perso btn btn-primary btn-lg" role="button">Button</a></p>
+        <p class="text-center"><a href="#" class="btn-perso btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#myModal">Button</a></p>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Rendez-vous</h4>
+                </div>
+                <div class="modal-body">
+                  <h4>Paiement :</h4>
+                   <div class="container">
+                    <div class="row">
+                      <div class="col-xs-3 xs-perso text-center">
+                        <button type="button" class="btn-perso btn-primary btn">En ligne</button>
+                      </div>
+
+                      <div class="col-xs-3 xs-perso text-center">
+                        <button type="button" class="btn btn-default btn" disabled="disabled">Au garage</button>
+                        <br><br>
+                        <p>Choix du rendez-vous :</p>
+                        <button type="button" class="btn btn-info">Lundi</button>
+
+                        <button type="button" class="btn btn-info">Mardi</button>
+
+                        <button type="button" class="btn btn-info">Mercredi</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                 </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
