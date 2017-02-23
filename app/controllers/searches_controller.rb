@@ -12,9 +12,7 @@ class SearchesController < ApplicationController
   def create
     @search = Search.new(search_params)
 
-
     # ICI: elire les garagistes et les sauver en base
-
 
     # redirect search#show pour @search
 
