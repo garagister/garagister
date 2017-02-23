@@ -1,3 +1,19 @@
 @import "utilities";
 @import "footer";
 @import "navbar";
+
+.btn-perso {
+  background-color: #38A4A1;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+ }
+.thumbnail-perso {
+  background-color: #F7F7F9;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #999999;
+}
+ .thumbnail-perso img {
+  width: 100%;
+ }

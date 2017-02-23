@@ -5,46 +5,66 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-4">
-            <div class="thumbnail">
-              <img src="" alt="...">
+            <div class="thumbnail thumbnail-perso">
+              <img src="http://www.garagister.com/medias/images/chivalier-pneus-banniere-1.jpg?fx=r_1200_800" alt="img-chivalier">
                 <div class="caption">
-                <h3 class="text-center"><strong>Chivallier</strong></h3>
-                <p> Ville : <%= @search.ville %></p>
-                <p> Type d'intervention : <%= @search.intervention %></p>
-                  <h4>service + : </h4>
-                    Véhicule de courtoisie, Facilités de paiement, Dépannage,... <br />
-
-                    <h4>Autres services : </h4>
-                    Forfait de 71€ TTC pour les Révisions Intermédiaires -25% sur les... <br /
-                <p><a href="#" class="btn-perso btn btn-primary btn-lg" role="button">Button</a></p>
-              </div>
+                  <h3 class="text-center"><strong>Chivallier</strong></h3>
+                  <p> Ville : <%= @search.ville %></p>
+                  <p> Type d'intervention : <%= @search.intervention %></p>
+                  <h4>Service + : </h4>
+                  <ul>
+                    <li>Véhicule de courtoisie</li>
+                    <li>Facilités de paiement</li>
+                    <li>Dépannage</li>
+                  </ul>
+                  <h4>Autres services : </h4>
+                  <ul>
+                    <li>Forfait de 71€ TTC pour les Révisions Intermédiaires -25% sur les...</li>
+                  </ul>
+                  <p class="text-center"><a href="#" class="btn-perso btn btn-primary btn-lg" role="button">Prendre rdv</a></p>
+                </div>
             </div>
           </div>
 
           <div class="col-xs-12 col-sm-4">
-            <div class="thumbnail">
-              <img src="../../assets/images/search/car_unsplash.jpg" alt="...">
+            <div class="thumbnail thumbnail-perso">
+              <img src="http://www.garagister.com/medias/images/banniere-garage-garlaban.jpg?fx=r_1200_800" alt="img-garlaban">
               <div class="caption">
                 <h3 class="text-center"><strong>Garlaban</strong></h3>
-                <p><%= @search.ville %></p>
-                <p><%= @search.intervention %></p>
+                <p> Ville : <%= @search.ville %></p>
+                <p> Type d'intervention : <%= @search.intervention %></p>
                 <h4>service + :</h4>
-                  <p> Diagnostic électronique, Spécialiste climatisation,...</p>
-                <h4>  Autres services : </h4>
-                Pour 3 amortisseurs achetés, le 4ème est offert Réduction sur le...
-                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                <ul>
+                  <li>Diagnostic électronique</li>
+                  <li>Spécialiste climatisation</li>
+                </ul>
+                <h4>Autres services : </h4>
+                <ul>
+                  <li>Pour 3 amortisseurs achetés, le 4ème est offert Réduction sur le... </li>
+                </ul>
+                <p class="text-center"><a href="#" class="btn-perso btn btn-primary btn-lg" role="button">Prendre rdv</a></p>
               </div>
             </div>
           </div>
 
           <div class="col-xs-12 col-sm-4">
-            <div class="thumbnail">
-            <img src="~/car" alt="...">
+            <div class="thumbnail thumbnail-perso">
+            <img src="http://www.garagister.com/medias/images/br-auto-banniere-2.jpg?fx=r_1200_800" alt="img-br-auto">
               <div class="caption">
               <h3 class="text-center"><strong>BR Auto</strong></h3>
-              <p><%= @search.ville %></p>
-              <p><%= @search.intervention %></p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+              <p> Ville : <%= @search.ville %></p>
+              <p> Type d'intervention :<%= @search.intervention %></p> <br/>
+                <ul>
+                  <li>service + :
+                    Véhicule de courtoisie</li>
+                  <li>Facilités de paiement</li>
+                  <li>Dépannage</li>
+                </ul>
+                <h4>Autres services :</h4>
+                <ul>
+                  <li>Remise de 15% pneumatique été et hiver</li>
+                </ul>
+                <p class="text-center"><a href="#" class="btn-perso btn btn-primary btn-lg" role="button">Prendre rdv</a></p>
               </div>
             </div>
           </div>
