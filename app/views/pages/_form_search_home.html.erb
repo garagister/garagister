@@ -1,14 +1,14 @@
 <div class="row">
   <%= simple_form_for @search do |f| %>
-    <div class="col-sm-12 col-md-4 col-md-offset-1">
-      <%= f.input :intervention, collection: interventions_collection, input_html: {class: "select2"} %>
+    <div class="col-xs-12 col-sm-4">
+      <%= f.input :intervention, label: "", collection: interventions_collection, input_html: {class: "select2"} %>
     </div>
 
-    <div class="col-sm-12 col-md-4">
-      <%= f.input :ville, collection: ["Marseille", "Aubagne"] %>
+    <div class="col-xs-12 col-sm-4">
+      <%= f.input :code_postal, label: "", collection: ["13400", "13001"], input_html: {class: "select2_code_postal"}  %>
     </div>
 
-    <div class="col-md-2">
+    <div class="col-xs-12 col-sm-4 ">
       <%= f.submit "Obtenir trois devis", class: "btn btn-yellow" %>
     </div>
   <% end %>

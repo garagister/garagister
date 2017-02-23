@@ -20,4 +20,3 @@ searches = Search.create( [ {name: 'Garlaban Automobile', ville: 'Aubagne', code
               {name: 'DPS Auto', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement'}
               ])
 
-villes = ["Marseille", "Aubagne", "La Ciotat"]
