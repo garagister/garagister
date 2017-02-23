@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row search_form">
   <%= simple_form_for @search do |f| %>
     <div class="col-xs-12 col-sm-4">
       <%= f.input :intervention, label: "", collection: interventions_collection, input_html: {class: "select2"} %>
@@ -9,7 +9,7 @@
     </div>
 
     <div class="col-xs-12 col-sm-4 ">
-      <%= f.submit "Obtenir trois devis", class: "btn btn-yellow" %>
+      <%= f.submit "Vos devis en temps réel", class: "btn btn-yellow" %>
     </div>
   <% end %>
 </div>

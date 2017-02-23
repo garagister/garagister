@@ -7,7 +7,7 @@ module SearchHelper
       value = intervention_array[0]
       label = intervention_array[1].name
 
-      hash[value] = label
+      hash[label] = value
     end
 
 
