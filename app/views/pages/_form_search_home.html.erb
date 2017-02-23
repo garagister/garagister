@@ -1,5 +1,6 @@
 <%= simple_form_for(@search) do |f| %>
   <%= f.select :intervention, collection: interventions_collection, input_html: {class: "select2"} %>
   <%= f.input :ville, collection: ["Marseille", "Aubagne"] %>
+  <%= f.input :code_postal%>
   <%= f.submit "Obtenir trois devis", class: "btn btn-yellow"  %>
 <% end %>
