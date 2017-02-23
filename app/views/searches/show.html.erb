@@ -1,0 +1,13 @@
+<h1>Mes devis</h1>
+
+<%= simple_form_for(@search) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :ville %>
+  <%= f.input :intervention %>
+  <%= f.input :code_postal %>
+
+
+  <%= f.button :submit %>
+<% end %>
+
