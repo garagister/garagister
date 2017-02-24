@@ -2,6 +2,8 @@
 @import "footer";
 @import "navbar";
 
+
+
 .btn-perso {
   background-color: #38A4A1;
   margin: 0 auto;
@@ -20,4 +22,26 @@
  }
 .modal h4 {
   text-align:center
+}
+
+.price
+{
+  color: #38A4A1;
+  //background-color: #38A4A1;
+  //border: 1px solid #38A4A1;
+  width: 35%;
+  padding: 5px;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 1px;
+  font-size: 1.2em;
+}
+.service-last
+{
+  margin-top: -22px;
+}
+
+section
+{
+  font-family: "Open Sans", "Helvetica", "Sans-Serif";
 }
