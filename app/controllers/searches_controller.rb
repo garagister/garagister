@@ -20,7 +20,7 @@ class SearchesController < ApplicationController
         @search.save
         redirect_to search_path(@search)
     else
-        render home_path
+        render 'pages/home'
     end
   end
 

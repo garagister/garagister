@@ -22,7 +22,7 @@
                   <ul>
                     <li>Forfait de 71€ TTC pour les Révisions Intermédiaires.</li>
                   </ul>
-                  <p class="text-center"><a href="#" class="btn-perso btn btn-primary btn-lg" role="button">Prendre rdv</a></p>
+                  <p class="text-center"><a href="#" class="btn-perso btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#myModal">Prendre rdv</a></p>
                 </div>
             </div>
           </div>
@@ -45,7 +45,7 @@
                 <ul>
                   <li>Pour 3 amortisseurs achetés, le 4ème est offert. </li>
                 </ul>
-                <p class="text-center"><a href="#" class="btn-perso btn btn-primary btn-lg" role="button">Prendre rdv</a></p>
+                <p class="text-center"><a href="#" class="btn-perso btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#myModal">Prendre rdv</a></p>
               </div>
             </div>
           </div>
@@ -77,28 +77,61 @@
                         <h4 class="modal-title" id="myModalLabel">Rendez-vous</h4>
                       </div>
                       <div class="modal-body">
-                        <h4>Paiement :</h4>
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-xs-3 xs-perso text-center">
+                              <form class="form-inline">
+                                <div class="form-group">
+                                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Nom">
+                                </div>
+                              </div>
+
+                            <div class="col-xs-3 xs-perso text-center">
+                              <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="mail@example.com">
+                                </div>
+                              </div>
+                             </form>
+                          </div>
+                        </div>
+                        <h4>Ou</h4>
                          <div class="container">
                           <div class="row">
                             <div class="col-xs-3 xs-perso text-center">
-                              <button type="button" class="btn-perso btn-primary btn">En ligne</button>
+                             <button type="button" class="btn-perso btn-perso2 btn-primary btn">Paiement en ligne</button>
                             </div>
-
                             <div class="col-xs-3 xs-perso text-center">
                               <button type="button" class="btn btn-default btn" disabled="disabled">Au garage</button>
                               <br><br>
                               <p>Choix du rendez-vous :</p>
-                              <button type="button" class="btn btn-info">Lundi</button>
+                              <button onclick="myFunction()" type="button" class="btn btn-info">Lundi</button>
+                              <script>
+                              function myFunction() {
+                                  $( ".modal-footer" ).append( "<p><br>Merci, Le rendez-vous est pris, vous allez recevoir un mail de confirmation !</p>" );
+                              }
+                              </script>
 
-                              <button type="button" class="btn btn-info">Mardi</button>
+                              <button onclick="myFunction()" type="button" class="btn btn-info">Mardi</button>
+                              <script>
+                              function myFunction() {
+                                  $( ".modal-footer" ).append( "<p><br>Merci, Le rendez-vous est pris, vous allez recevoir un mail de confirmation !</p>" );
+                              }
+                              </script>
 
-                              <button type="button" class="btn btn-info">Mercredi</button>
+                              <button onclick="myFunction()" type="button" class="btn btn-info">Mercredi</button>
+                              <script>
+                              function myFunction() {
+                                  $( ".modal-footer" ).append( "<p><br>Merci, Le rendez-vous est pris, vous allez recevoir un mail de confirmation !</p>" );
+                              }
+                              </script>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <a href="../pages/home.html.erb">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+                      </a>
                        </div>
                     </div>
                   </div>
@@ -110,3 +143,6 @@
       </div>
     </section>
 <% end %>
+
+
+<!-- alert ("") -->
