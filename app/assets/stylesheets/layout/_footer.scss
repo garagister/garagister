@@ -2,13 +2,15 @@
 
 
 .footer{
-  margin: 60px 60px 60px 60px;
-  text-align: center;
-  box-flex: 40px
+  margin: 50px 200px;
+  text-align: right;
 }
-.cgu{
-  text-align: left;
+
+ul {
+  list-style-type: none;
 }
-a {
-    color: #656565;
+
+li {
+  display: inline-block;
+  margin-left: 20px;
 }
