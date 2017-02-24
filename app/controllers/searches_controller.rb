@@ -20,7 +20,8 @@ class SearchesController < ApplicationController
         @search.save
         redirect_to search_path(@search)
     else
-        render 'pages/home'
+        flash.now[:alert] = "Veuillez compléter tous les champs !"
+        render "pages/home"
     end
   end
 
@@ -38,7 +39,7 @@ class SearchesController < ApplicationController
     end
 
   def search_params
-      params.require(:search).permit(:name, :intervention, :ville, :code_postal)
+      params.require(:search).permit(:name, :intervention, :immatriculation, :code_postal)
     end
 
 end
