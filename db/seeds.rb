@@ -8,7 +8,7 @@
 Garagiste.destroy_all
 Search.destroy_all
 
-garagistes = Garagiste.create( [ {name: 'Garlaban Automobile', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', taux_mo: 60, taux_piece: 1},
+garagistes = Garagiste.create!( [ {name: 'Garlaban Automobile', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', taux_mo: 60, taux_piece: 1},
               {name: 'Chivallier', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', taux_mo: 70, taux_piece: 1},
               {name: 'BR Auto', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', taux_mo: 60, taux_piece: 1},
               {name: 'MD Muscatelle', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', taux_mo: 60, taux_piece: 1},
