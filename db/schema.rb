@@ -47,8 +47,8 @@ ActiveRecord::Schema.define(version: 20170224133130) do
     t.string   "immatriculation"
     t.integer  "price"
     t.integer  "garagiste_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
     t.index ["garagiste_id"], name: "index_searches_on_garagiste_id", using: :btree
   end
 
