@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170222162554) do
+ActiveRecord::Schema.define(version: 20170224105710) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20170222162554) do
   create_table "garagistes", force: :cascade do |t|
     t.string   "name"
     t.string   "ville"
+    t.string   "adresse"
     t.integer  "code_postal"
     t.string   "categorie"
     t.decimal  "taux_mo"
@@ -42,9 +43,12 @@ ActiveRecord::Schema.define(version: 20170222162554) do
     t.integer  "code_postal"
     t.string   "categorie"
     t.string   "description"
+    t.integer  "price"
+    t.integer  "garagiste_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.string   "intervention"
+    t.index ["garagiste_id"], name: "index_searches_on_garagiste_id", using: :btree
   end
 
   create_table "villes", force: :cascade do |t|
@@ -56,4 +60,5 @@ ActiveRecord::Schema.define(version: 20170222162554) do
 
   add_foreign_key "quotations", "garagistes"
   add_foreign_key "quotations", "searches"
+  add_foreign_key "searches", "garagistes"
 end
