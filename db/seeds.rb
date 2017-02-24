@@ -15,11 +15,11 @@ garagistes = Garagiste.create!( [ {name: 'Garlaban Automobile', ville: 'Aubagne'
               {name: 'DPS Auto', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', taux_mo: 60, taux_piece: 1}
               ])
 
-searches = Search.create!( [ {name: 'Garlaban Automobile', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement', intervention: "vidange"},
-              {name: 'Chivallier', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement', intervention: "vidange"},
-              {name: 'BR Auto', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement', intervention: "revision"},
-              {name: 'MD Muscatelle', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement', intervention: "vidange"},
-              {name: 'DPS Auto', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement', intervention: "revision"}
+searches = Search.create!( [ {name: 'Garlaban Automobile', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement', intervention: "vidange", immatriculation: "AA-343-SK"},
+              {name: 'Chivallier', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement', intervention: "vidange", immatriculation: "AA-343-SK"},
+              {name: 'BR Auto', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement', intervention: "revision", immatriculation: "AA-343-SK"},
+              {name: 'MD Muscatelle', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement', intervention: "vidange", immatriculation: "AA-343-SK"},
+              {name: 'DPS Auto', ville: 'Aubagne', code_postal: 13400, categorie: 'Revision', description: 'Vehicule de remplacement', intervention: "revision", immatriculation: "AA-343-SK"}
               ])
 
 
